@@ -79,3 +79,31 @@ Essas evoluções não fazem parte do template inicial; elas pertencem à fase d
 
 > O objetivo é descobrir, no menor tempo possível, se uma ideia realmente resolve um problema.
 
+## Criando um novo protótipo
+
+1. Copie a pasta do template.
+2. Renomeie a pasta com o nome do projeto.
+3. Remova o histórico Git:
+
+```bash
+rm -rf .git
+```
+
+4. Inicialize um novo repositório:
+
+```bash
+git init
+git branch -M main
+```
+
+5. Crie um repositório vazio no GitHub.
+
+6. Conecte o projeto:
+
+```bash
+git remote add origin <URL_DO_REPOSITORIO>
+git push -u origin main
+```
+
+Agora o protótipo está pronto para desenvolvimento.
+
